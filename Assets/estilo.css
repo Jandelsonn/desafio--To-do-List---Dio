@@ -1,0 +1,124 @@
+url @import ('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+:raiz {
+    --cor primária: rgba(1, 244, 212, 0.91);
+    --cor secundária: rgb(247, 247, 241);
+    -terceira cor: #499167;
+}
+
+* {
+    margem: 0;
+    preenchimento: 0;
+    tamanho da caixa: 0;
+}
+html {
+    tamanho da fonte: 65%;
+}
+corpo {
+    cor de fundo: var (--cor primária);
+    fonte: negrito 2rem 'Poiret One', cursivo;
+}
+principal {
+    min-altura: 100vh;
+    fundo: gradiente linear (para cima direito, #9bffd0,#9CC5A1);
+    display: flex;
+    itens de alinhamento: centro;
+    justificar-conteúdo: centro;
+}
+. todo {
+    display: flex;
+    largura: 48vw;
+    flex-direção: coluna;
+    itens de alinhamento: centro;
+    margem: 0 auto;
+    lacuna: 15px;
+}
+
+. todo__title {
+    display: flex;
+    cor de fundo: transparente;
+    fronteira: rgba(255, 255, 255, 0.808);
+    largura: 40%;
+    altura: 60px;
+    justificar-conteúdo: centro;
+    itens de alinhamento: centro;
+    margem-topo: 145px;
+    box-shadow: 2px 2px 6px var (--cor secundária);
+    tamanho da fonte: 4rem;
+    cor: rgba(24, 126, 112, 0.911);
+}
+. todo__list {
+    display: flex;
+    largura: 85%;
+    flex-direção: coluna;
+    lacuna: 5px;
+}
+. todo__item{
+    display: flex;
+    largura: 100%;
+    altura: 60px;
+    conteúdo-justificativa: espaço-entre;
+    itens de alinhamento: centro;
+    preenchimento: 5px;
+    box-shadow: 1px 1px 5px var (--cor secundária);
+}
+. todo__item div >  {
+    largura: 80%;
+}
+. todo__item:paire {
+    cursor: ponteiro;
+    transição: todos .4s facilidade;
+    cor de fundo: rgba (255, 255, 255, 0.911);
+    cor: #499167;
+}
+
+
+. todo__item entrada > [tipo='texto'] {
+    fronteira: nenhuma;
+    largura: 40%;
+    fonte: herdar;
+    
+}
+. todo__item > entrada[type='button'],
+. todo__item entrada > [digit='checkbox'] {
+    largura: 28px;
+    altura: 28px;
+    fonte: herdar;
+    cor de fundo: #55997154;
+    borda: 2px sólido #ffffffda;
+}
+. todo__item entrada >[digit='checkbox']:verificado + div {
+    text-decoration:line-through;
+}
+. todo__new item{
+    display: flex;
+    cor de fundo: #499167;
+    largura: 85%;
+    altura: 62px;
+    justificar-conteúdo: espaço-uniforme;
+    preenchimento: 10px 20px;
+    box-shadow: 2px 2px 6px #499167;
+    margem: 10px;
+    fonte: herdar;
+}
+. entrada > de todo__new itens{
+    cor de fundo: #499167;
+    fronteira: nenhuma;
+    largura: 80%;
+    contorno: nenhum;
+    fonte: herdar;
+}
+. entrada de > de todo__new itens::espaço reservado {
+    estilo fonte: itálico;
+    peso da fonte: normal;
+    tamanho da fonte: 88%;
+    cor: rgba(191, 255, 204, 0.856);
+}
+. vidro {
+    fundo: rgba(255, 255, 255, 0.61);
+    min-altura: 80vh;
+    largura: 60%;
+    fundo: gradiente linear (para o fundo direito, rgba(255, 255, 255, 0,7), rgba(255, 255, 255, 0.3));
+    raio-fronteira: 3rem;
+    filtro de pano de fundo: desfoque (25rem);
+}
